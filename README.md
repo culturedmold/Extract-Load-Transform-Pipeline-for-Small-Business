@@ -6,11 +6,9 @@ Cory Hampton
 This project was an excercise in creating an extract/load/transform pipeline for a small business. It utilized PostgreSQL as the database and involved the creation of triggers, procedures, and functions to extract and load data into business friendly views, and transform data into consumable chunks of information for stakeholders. 
 
 ### Identify a real-world written business report that can be created from the DVD Dataset from the “Labs on Demand Assessment Environment and DVD Database” attachment.
-
 Business problem/need: identify the film actors that have the highest rental price, as well as the actors that have the highest or lowest average rental price. 
 
 ### Identify the specific fields that will be included in the detailed table and the summary table of the report.
-
 The report will include “detail_report” and “summary_report” tables. The detail_report table will include a list of all rentals organized by lowest to highest rental price. The summary_report table will display the data as average rental price by actor. 
 
 ### Describe the types of data fields used for the report.
@@ -32,7 +30,7 @@ Fields include the following for summary_report:
 			
 The tables that will provide the necessary data from the given dataset are as follows: actor, film_actor, inventory, film, rental, payment.
 
-### Identify at least one field in the detailed table section that will require a custom transformation with a user-defined function and explain why it should be transformed (e.g., you might translate a field with a value of N to No and Y to Yes).
+### Identify at least one field in the detailed table section that will require a custom transformation with a user-defined function and explain why it should be transformed.
 
 We will perform the following transformations on data from the detail_report table to be loaded into the summary_report table: concatenate actorFirstName and actorLastName into a single columns “actorName”, and we will take the rentalPrice for each rental and transform it into an average price by actor. We will take the count of each rentalID and display it as well, to indicate the number of rentals that each actor has that are contributing to the average number. 
 
