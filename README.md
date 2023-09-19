@@ -1,7 +1,5 @@
 # Small-Business-Database Extract/Load/Transform Project
 
-Cory Hampton
-
 ## Overview:
 This project was an excercise in creating an extract/load/transform pipeline for a small business. It utilized PostgreSQL as the database and involved the creation of triggers, procedures, and functions to extract and load data into business friendly views, and transform data into consumable chunks of information for stakeholders. 
 
